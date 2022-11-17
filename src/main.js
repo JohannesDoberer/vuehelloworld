@@ -1,4 +1,11 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
+// import LuigiClient from '@luigi-project/client';
 
-createApp(App).mount('#app')
+// Vue.mixin({
+//     created: function () {
+//         this.luigi = LuigiClient;
+//     }
+// });
+createApp(App).use(router).mount('#app')
